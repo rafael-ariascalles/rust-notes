@@ -12,7 +12,9 @@ fn main() {
     }
 }
 //this function will read the input from the user
-fn read_input(mut input: String ) -> String {
-    io::stdin().read_line(&mut input).expect("Failed to read line");
+fn read_input(mut input: String) -> String {
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
     input.trim().to_string()
 }
