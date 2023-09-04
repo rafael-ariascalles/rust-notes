@@ -38,9 +38,10 @@ fn main() {
 fn print_note(){
     let note_position: usize  = rand::random::<usize>() % NOTES.len();
     //return the selected notes
-    println!("#########################  {} ", NOTES[note_position]);
-    println!("#########################  {} ", NOTES[note_position]);
-    println!("#########################  {} ", NOTES[note_position]);
+    let note: &str = NOTES[note_position];
+    println!("#########################  {} ", note);
+    println!("#########################  {} ", note);
+    println!("#########################  {} ", note);
     std::thread::sleep(std::time::Duration::from_secs(3));
     
 }   
